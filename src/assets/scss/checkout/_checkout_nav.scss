@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.nav_banner{
+    font-family: 'Red Hat Display';
+    
+    .row{
+        height: 100%;
+
+    }
+    .logo_div{
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 22px;
+            color:#404041;
+            font-weight: bold;
+        }
+        img{
+            height:37px;
+            width: 42px;
+            margin-right: 13px;
+            margin-top: -15px;
+        }
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-top:12px;
+        li{
+            color:#404041;
+            display: inline;
+            font-size: 13px;
+            margin-left: 13px;
+            
+            .icon_before{
+                margin-right: 8px;
+            }
+            .icon_after{
+                margin-left: 8px;
+            }
+        }
+    }
+    .right_div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            font-size: 13px;
+            color:#404041;
+            p{
+                display: inline;
+                visibility: visible;
+            }
+
+            img{
+                height: 17px;
+                width: 17px;
+                margin-left: 8px;
+            }
+        }
+
+    }
+}
+@media screen and (min-width:320px) and (max-width:500px)
+{
+    .right_div{
+        position: absolute;
+        right:0px;
+        width:40%;
+        a{
+            p{
+                opacity: 0;
+                width:0px;
+            }
+            .lock_img{
+                position: absolute;
+                right:57px;
+                top:6px;
+            }
+            
+            .cart_img{
+                position: absolute;
+                right:27px;
+                top:6px;
+            }
+        }    
+    }
+    .nav_banner{
+        ul{
+            padding: 0px;
+            flex-wrap: wrap;
+            li{
+                margin-right:10px;
+            }
+        }
+    }
+    
+}

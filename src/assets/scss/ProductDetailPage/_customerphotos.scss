@@ -1,0 +1,36 @@
+.customer_photos_wrapper{
+    margin-top: 50px;
+    h2{
+        font-size: 20px;
+        color:#404041;
+    }
+    // .pic{
+    //     margin-top: 33px;
+    // }
+    .img_div{
+        height:200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0 8px 8px 0 rgba(88, 87, 87, 0.1);
+        // border: 5px solid #F8F9FA;
+        img{
+            
+            height:34px;
+            width:44px;
+        }
+    }
+    .splide__pagination {
+        bottom: -1.5em;
+    }
+    #customer-photos{
+        padding: 20px 0px;
+    }
+}
+@media (max-width: 768px) {
+    .customer_photos_wrapper{
+            display: none;
+        }
+}

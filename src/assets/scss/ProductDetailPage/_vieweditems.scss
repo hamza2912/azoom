@@ -1,0 +1,108 @@
+.viewed-items-wrapper{
+    margin-top: 60px;
+    h2{
+        color:#404041;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .product-card {
+      margin-top: 10px;
+      margin-bottom: 45px;
+      .card {
+        border: 8px solid #f8f9fa;
+        background-color: white;
+        height: fit-content;
+        width: 228px;
+        border-radius: 20px;
+        padding: 0px;
+        padding-bottom: 20px;
+        overflow: hidden;
+        .img_div {
+          height: 215px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            height: auto;
+          }
+          .product-action {
+            display: flex;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(64, 64, 65, 0.8);
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: opacity 600ms, visibility 600ms;
+            transition: opacity 600ms, visibility 600ms;
+          }
+        }
+        .img_div:hover {
+          .product-action {
+            opacity: 1;
+            visibility: visible;
+            .basket_btn {
+              width: 133px;
+              height: 40px;
+              background-color: var(--secondary_color);
+              color: white;
+              font-weight: bold;
+              font-size: 14px;
+              border-radius: 6px;
+            }
+            .quickview_btn {
+              font-weight: bold;
+              height: 40px;
+              width: 85px;
+              font-size: 13px;
+              padding: 5px;
+              color: var(--para_color);
+              border-radius: 6px;
+            }
+          }
+        }
+        .product_name {
+          font-family: var(--primary_font);
+          font-size: 16px;
+          margin-bottom: 0px;
+          font-weight: 500;
+        }
+        .price {
+          color: var(--secondary_color);
+          font-size: 22px;
+          font-family: var(--primary_font);
+          font-weight: bold;
+        }
+      }
+    }
+}
+@media (max-width: 768px) {
+  .viewed-items-wrapper{
+          display: none;
+      }
+}
+
+.related-searches{
+  h2{
+    color:#404041;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  button{
+    width: 149px;
+    height: 45px;
+    background-color: #F0F0F0;
+    border-radius: 6px;
+    color: #797979;
+  }
+}

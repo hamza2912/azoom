@@ -1,0 +1,386 @@
+import axios from "axios";
+import { URL, HEADERS } from "../constants/api";
+import { raiseErrorForServices } from "../constants/errors";
+//sample gqlData format - query or mutation data
+const gqlDataForOrderList = `query {
+  customer {
+    #compare_list
+    created_at          
+    firstname
+    lastname
+    suffix
+    email 
+    gender
+    is_subscribed
+    middlename
+    orders { 
+      page_info{
+        current_page
+        page_size
+        total_pages
+      }
+      total_count
+      items {
+        id        
+        number
+        order_date
+        total{
+          base_grand_total{
+            currency
+            value
+          }
+          discounts{
+            amount{
+              currency
+              value
+            }           
+          }
+          grand_total{
+            currency
+            value
+          }
+          shipping_handling{
+            amount_excluding_tax{
+              currency
+              value
+            }
+            amount_including_tax{
+              currency
+              value
+            }
+            discounts{
+              amount{
+                currency
+                value
+              }              
+            }
+            taxes{
+              amount{
+                currency
+                value
+              }
+              rate
+              title
+            }
+            total_amount{
+              currency
+              value
+            }            
+          }
+          total_shipping{
+            currency
+            value
+          }
+          total_tax{
+            currency
+            value
+          }          
+        }      
+        status
+        carrier
+        comments{
+          message
+          timestamp
+        }        
+        payment_methods{
+          name
+          type
+        }
+        items{
+          id          
+          discounts{
+            amount{
+              currency
+              value
+            }
+            label
+          }
+          product_name
+          product_sale_price{
+            currency
+            value
+          }
+          product_sku
+          product_type
+          product_url_key
+          quantity_canceled
+          quantity_invoiced
+          quantity_ordered
+          quantity_refunded
+          quantity_shipped
+          selected_options{
+            label
+            value
+          }
+          status        
+        }
+        billing_address{
+          firstname
+          lastname
+          street
+          city
+          region 
+          postcode
+          country_code
+          telephone
+        }
+        shipping_address{
+          firstname
+          lastname
+          street
+          city
+          region 
+          postcode
+          country_code
+          telephone
+        }        
+        invoices{
+          id
+          comments{
+            message
+            timestamp
+          }
+          items{
+            id
+            product_name
+            product_sale_price{
+              currency
+              value
+            }
+            product_sku
+            quantity_invoiced
+            discounts{
+              amount{
+                currency
+                value
+              }
+              label              
+            }            
+            order_item{
+              id
+              discounts{
+                amount{
+                  currency
+                  value
+                }
+                label
+              }
+              product_name
+              product_sale_price{
+                currency
+                value
+              }
+              product_sku
+              product_type
+              product_url_key
+              quantity_canceled
+              quantity_invoiced
+              quantity_ordered
+              quantity_refunded
+              quantity_shipped
+              selected_options{
+                label
+                value
+              }
+              status
+            }            
+          }
+        }
+        shipments{
+          number
+          comments{
+            message
+            timestamp
+          }
+          items{            
+            order_item{
+              id
+              discounts{
+                amount{
+                  currency
+                  value
+                }
+                label
+              }
+              product_name
+              product_sale_price{
+                currency
+                value
+              }
+              product_sku
+              product_type
+              product_url_key
+              quantity_canceled
+              quantity_invoiced
+              quantity_ordered
+              quantity_refunded
+              quantity_shipped
+              selected_options{
+                label
+                value
+              }
+              status
+            } 
+          }
+        } 
+        credit_memos{
+          id
+          comments{
+            message
+            timestamp
+          }
+          items{
+            id
+            product_name
+            product_sale_price{
+              currency
+              value
+            }
+            product_sku            
+            discounts{
+              amount{
+                currency
+                value
+              }
+              label              
+            }            
+            order_item{
+              id
+              discounts{
+                amount{
+                  currency
+                  value
+                }
+                label
+              }
+              product_name
+              product_sale_price{
+                currency
+                value
+              }
+              product_sku
+              product_type
+              product_url_key
+              quantity_canceled
+              quantity_invoiced
+              quantity_ordered
+              quantity_refunded
+              quantity_shipped
+              selected_options{
+                label
+                value
+              }
+              status
+            }            
+          }          
+          total{
+            adjustment{
+              currency
+              value
+            }            
+            base_grand_total{
+              currency
+              value
+            }
+            discounts{
+              amount{
+                currency
+                value
+              }           
+            }            
+            shipping_handling{
+              amount_excluding_tax{
+                currency
+                value
+              }
+              amount_including_tax{
+                currency
+                value
+              }
+              discounts{
+                amount{
+                  currency
+                  value
+                }              
+              }
+              taxes{
+                amount{
+                  currency
+                  value
+                }
+                rate
+                title
+              }
+              total_amount{
+                currency
+                value
+              }            
+            }            
+            total_shipping{
+              currency
+              value
+            }
+            taxes{
+              rate
+              amount{
+                currency
+                value
+              }
+              title
+            }
+            total_tax{
+              currency
+              value
+            }
+            subtotal{
+              currency
+              value
+            }
+            grand_total{
+              currency
+              value
+            }
+          }           
+        }
+      }      
+    }   
+  }
+}`;
+
+const gqlMutationForPlaceOrder = `mutation placeOrder( $input: PlaceOrderInput! ) {
+    placeOrder(
+    input: $input,
+  ) {
+    order {
+      order_number
+    }
+  }
+}`;
+
+export const palceOrder = async (input) => {
+  const { data } = await axios({
+    url: URL,
+    method: "POST",
+    data: {
+      query: gqlMutationForPlaceOrder,
+      variables: {
+        input: input,
+      },
+    },
+
+    headers: HEADERS,
+  });
+  return raiseErrorForServices(data);
+};
+
+export const getOrderInfo = async () => {
+  const { data } = await axios({
+    url: URL,
+    method: "POST",
+    data: {
+      query: gqlDataForOrderList,
+    },
+    headers: HEADERS,
+  });
+  return raiseErrorForServices(data);
+};

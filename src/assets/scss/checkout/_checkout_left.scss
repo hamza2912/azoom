@@ -1,0 +1,458 @@
+.left_div {
+  margin-top: 20px;
+  background-color: white;
+  font-family: "Red Hat Display";
+  h3 {
+    color: #404041;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .row{
+    z-index: 1;
+    position: relative;
+  }
+
+  .address_p {
+    color: #404041;
+    font-size: 16px;
+    // font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .pay_info {
+    border: 2px solid #53acaa;
+    border-radius: 10px;
+    margin-bottom: 28px;
+    margin-top: 23px;
+    .top {
+      img {
+        margin-left: 10px;
+      }
+      .type{
+        width: 130px;
+        margin-top: -55px;
+        margin-left: 35px;
+        @media (max-width: 768px) {
+          width: 100px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+      }
+      .debit_card{
+        width: 50px;
+        margin-left: 20px;
+      }
+      .paypal_head {
+        h6 {
+          font-size: 16px;
+          font-weight: 600;
+          color: #404041;
+        }
+        p {
+          font-size: 14px;
+          margin-top: -8px;
+          font-weight: 600;
+        }
+      }
+    }
+    .middle {
+      font-size: 15px;
+      font-weight: 500;
+      color: #797979;
+    }
+    .last {
+      // float: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        color: #ee5f3b;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      button {
+        background-color: #53acaa;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        border-radius: 10px;
+        margin-left: 13px;
+
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .radiobtn_div {
+    margin-bottom: 20px;
+
+    .radio {
+      position: relative;
+      margin-top: 20px;
+
+      .second_img {
+        margin-left: 3px;
+      }
+      p {
+        display: inline;
+        margin-left: 12px;
+        font-size: 16px;
+      }
+      .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* Hide the browser's default radio button */
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 50%;
+      }
+
+      .container:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+
+      .container input:checked ~ .checkmark {
+        background-color: #2196f3;
+      }
+
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      .container .checkmark:after {
+        top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+      }
+    }
+    .radio2 {
+      position: relative;
+      margin-top: 38px;
+
+      .second_img {
+        margin-left: 3px;
+      }
+      .paypal-img{
+        width: 130px;
+        margin-top: -26px;
+        margin-left: -12px;
+      }
+      p {
+        display: inline;
+        margin-left: 3px;
+        position: absolute;
+        top: 34px;
+        font-size: 16px;
+      }
+
+      .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* Hide the browser's default radio button */
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 50%;
+      }
+
+      .container:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+
+      .container input:checked ~ .checkmark {
+        background-color: #2196f3;
+      }
+
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      .container .checkmark:after {
+        top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+      }
+    }
+  }
+  pre {
+    color: #ee5f3b;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .paypal_divs {
+    position: relative;
+    margin-top: 20px;
+    height: 80px;
+    img {
+      position: absolute;
+      left: 0px;
+      width: 100px;
+    }
+    h6 {
+      position: absolute;
+      left: 120px;
+      top: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #404041;
+    }
+    p {
+      position: absolute;
+      left: 120px;
+      font-size: 14px;
+      font-weight: 600;
+      top: 30px;
+    }
+  }
+  .parcel_pageno {
+    font-size: 15px;
+    color: #404041;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  .pro_div {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 30px 15px;
+    img{
+      width: 150px;
+      height: 150px;
+    }
+    p {
+      font-size: 14px;
+      color: #404041;
+      margin-top: 22px;
+      font-weight: 500;
+      span {
+        color: #53acaa;
+        font-weight: bold;
+      }
+    }
+  }
+  .shelter_div {
+    border-radius: 8px;
+    border: 2px solid #afafaf;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    p {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .shelter_div_inner {
+      .btn_div {
+        display: inline;
+
+        .dropbtn {
+          background-color: #04aa6d;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          background: white;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          top: -440%;
+          left: 0px;
+          background-color: #FFFFFF;
+          width: 100%;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 2;
+          border: 2px solid #797979;
+          border-radius: 8px;
+          overflow: hidden;
+          padding-top: 20px;
+          a {
+            color: black;
+            font-size: 12px;
+            padding: 10px 16px;
+            display: block;
+          }
+          a:hover {
+            background-color: #ddd;
+          }
+        }
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        .dropdowns {
+          border: 2px solid #797979;
+          border-radius: 8px;
+          width: 100%;
+          height: 49px;
+          position: relative;
+          p {
+            font-size: 11px;
+            color: #797979;
+            position: absolute;
+            top: 9%;
+            left: 3%;
+          }
+          small {
+            color: #404041;
+            font-size: 12px;
+            position: absolute;
+            top: 48%;
+            left: 3%;
+          }
+          img {
+            position: absolute;
+            right: 5%;
+            top: 47%;
+          }
+        }
+
+        .add_btn {
+          background-color: #797979;
+          color: white;
+          height: 43px;
+          border-radius: 6px;
+          img {
+            margin-right: 10px;
+          }
+          b {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.checkout-sku{
+  position: relative;
+
+  .bg-shape{
+    position: absolute;
+    z-index: 0;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .bg-shape-left{
+    width: 100px;
+    height: auto;
+    left: 0;
+    top: 30%;
+  }
+
+  .bg-shape-right{
+    width: 80px;
+    height: auto;
+    right: 0;
+    top: 30%;
+  }
+
+  .bg-shape-bottom{
+    width: 500px;
+    height: auto;
+    right: 20%;
+    bottom: 0;
+  }
+
+}
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .shelter_div_inner {
+    .btn_div {
+      .dropdown {
+        margin-left: 0%;
+      }
+      .dropdowns {
+        margin-left: 6%;
+      }
+      .dropdown-content {
+        margin-left: 6%;
+      }
+
+      button {
+        margin-left: 6%;
+      }
+    }
+  }
+}

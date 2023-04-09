@@ -1,0 +1,107 @@
+.frequently-bought-wrapper {
+    #frequently-bought-slider {
+        .heading-text {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .product {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            height: auto;
+            .img-div {
+                text-align: center;
+                height: 210px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100px;
+                    height: auto;
+                    
+                }
+                @media (max-width: 768px) {
+                    height: 200px;
+                  }
+            }
+            .add-btn {
+                color: $bg_cyan;
+                border: 2px solid $bg_cyan;
+                margin-bottom: 18px;
+                width: 85%;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        
+        }
+        .product:hover{
+            border: 2px solid $bg_cyan;
+            .add-btn{
+                color: white;
+                background-color: $bg_cyan;
+            }
+        }
+    }
+    .splide__arrows{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+ .frequently-bought-wrapper{
+    #frequently-bought-slider{
+        .splide__arrows {
+            display: block;
+            .splide__arrow--next {
+              right: -1em;
+              svg {
+                fill: #797979;
+                @media (max-width: 768px) {
+                  width: 1em;
+                  height: 1em;
+                  fill: #53acaa;
+                }
+              }
+              @media (max-width: 768px) {
+                border-radius: 0;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border: 2px solid #53acaa;
+                right: -1.4em;
+              }
+            }
+            .splide__arrow--prev {
+              left: -1em;
+              svg {
+                fill: #797979;
+                @media (max-width: 768px) {
+                  width: 1em;
+                  height: 1em;
+                }
+              }
+              @media (max-width: 768px) {
+                border-radius: 0;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                left: -1.4em;
+              }
+            }
+            .splide__arrow {
+              background: none;
+              @media (max-width: 768px) {
+                background-color: white;
+                height: 40px;
+                box-shadow: 0 5px 5px 0 rgba(88, 87, 87, 0.05);
+                top: 45%;
+              }
+            }
+          }
+      }
+ }
+  }

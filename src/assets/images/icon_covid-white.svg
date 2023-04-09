@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.004" height="46.004" viewBox="0 0 46.004 46.004">
+  <g id="icon_covid" transform="translate(1 1)">
+    <g id="Group_2897" data-name="Group 2897">
+      <circle id="Ellipse_247" data-name="Ellipse 247" cx="16.015" cy="16.015" r="16.015" transform="translate(5.987 6.05)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="Group_2484" data-name="Group 2484" transform="translate(19.301 12.027)">
+        <circle id="Ellipse_248" data-name="Ellipse 248" cx="2.701" cy="2.701" r="2.701" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Ellipse_249" data-name="Ellipse 249" cx="2.701" cy="2.701" r="2.701" transform="translate(0 14.53)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="Group_2485" data-name="Group 2485" transform="translate(12.036 19.292)">
+        <circle id="Ellipse_250" data-name="Ellipse 250" cx="2.701" cy="2.701" r="2.701" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Ellipse_251" data-name="Ellipse 251" cx="2.701" cy="2.701" r="2.701" transform="translate(14.53)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="Group_2488" data-name="Group 2488" transform="translate(0 18.768)">
+        <g id="Group_2486" data-name="Group 2486">
+          <line id="Line_232" data-name="Line 232" x1="5.987" transform="translate(0 3.234)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="Line_233" data-name="Line 233" y2="6.467" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="Group_2487" data-name="Group 2487" transform="translate(38.017)">
+          <line id="Line_234" data-name="Line 234" x2="5.987" transform="translate(0 3.234)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="Line_235" data-name="Line 235" y2="6.467" transform="translate(5.987)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_2491" data-name="Group 2491" transform="translate(18.768)">
+        <g id="Group_2489" data-name="Group 2489" transform="translate(0 38.017)">
+          <line id="Line_236" data-name="Line 236" y2="5.987" transform="translate(3.234 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="Line_237" data-name="Line 237" x2="6.467" transform="translate(0 5.987)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="Group_2490" data-name="Group 2490">
+          <line id="Line_238" data-name="Line 238" y1="5.987" transform="translate(3.234)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="Line_239" data-name="Line 239" x2="6.467" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_2494" data-name="Group 2494" transform="translate(4.158 4.158)">
+        <g id="Group_2492" data-name="Group 2492" transform="translate(0 29.168)">
+          <line id="Line_240" data-name="Line 240" x1="4.234" y2="4.234" transform="translate(2.287)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="Line_241" data-name="Line 241" x2="4.573" y2="4.573" transform="translate(0 1.947)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="Group_2493" data-name="Group 2493" transform="translate(29.168)">
+          <line id="Line_242" data-name="Line 242" y1="4.234" x2="4.234" transform="translate(0 2.287)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="Line_243" data-name="Line 243" x2="4.573" y2="4.573" transform="translate(1.947)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_2497" data-name="Group 2497" transform="translate(4.158 4.158)">
+        <g id="Group_2495" data-name="Group 2495">
+          <line id="Line_244" data-name="Line 244" x1="4.234" y1="4.234" transform="translate(2.287 2.287)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="Line_245" data-name="Line 245" x1="4.573" y2="4.573" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="Group_2496" data-name="Group 2496" transform="translate(29.168 29.168)">
+          <line id="Line_246" data-name="Line 246" x2="4.234" y2="4.234" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="Line_247" data-name="Line 247" x1="4.573" y2="4.573" transform="translate(1.947 1.947)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

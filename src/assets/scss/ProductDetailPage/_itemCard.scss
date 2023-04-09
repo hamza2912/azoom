@@ -1,0 +1,104 @@
+.item-card {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    height: inherit;
+    .img-div {
+        background-color: #fcfcfc;
+        position: relative;
+        border-radius: 0px 10px 0px 0px;
+        img {
+            width: auto;
+            height: 160px;
+        }
+    }
+    .current-item-tag {
+        display: none;
+    }
+    .prod-name {
+        text-align: left;
+        .name {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0px;
+        }
+        .writer {
+            font-size: 11px;
+        }
+    }
+    .price {
+        color: #53acaa;
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    .see-details {
+        margin-top: 10px;
+        text-align: center;
+        p {
+            color: #53acaa;
+            text-decoration: underline;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    .add-btn {
+        display: none;
+    }
+    .details-link {
+        color: $bg_cyan;
+        text-decoration: underline;
+        font-size: 16px;
+    }
+    .card-body {
+        padding: 0.75rem !important;
+    }
+    .card-action {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 7px;
+    }
+    .label {
+        position: absolute;
+        color: white;
+        bottom: 0;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 10px;
+        border-radius: 0px 5px 0 0;
+        &.sale{
+            background-color: #EE5F3B;
+        }
+        &.new{
+            background-color: #B6B39F;
+        }
+    }
+}
+.item-card:hover {
+    border: 2px solid $bg_cyan;
+    .current-item-tag {
+        display: block !important;
+        position: absolute;
+        width: auto;
+        background-color: $bg_cyan;
+        color: white;
+        top: 0;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 8px;
+        border-radius: 5px 0px;
+    }
+    .details-link {
+        display: none;
+    }
+    .add-btn {
+        display: block !important;
+        color: white;
+        background-color: $bg_cyan;
+        margin-bottom: 5px;
+        width: 90%;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}

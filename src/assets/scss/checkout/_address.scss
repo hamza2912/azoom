@@ -1,0 +1,64 @@
+.checkout-address {
+  .save-address-btn {
+    background-color: #53acaa;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 1rem;
+    z-index: 1;
+    position: relative;
+    &:focus{
+      outline: none;
+    }
+  }
+  form{
+    padding-right: 30px;
+  }
+  .box-search {
+    position: relative;
+    width: 100%;
+    input {
+      position: relative;
+      border: none;
+      outline: none;
+      height: 45px;
+      width: 100%;
+      font-size: 22px;
+      padding-top: 16px;
+      padding-bottom: 6px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 2px solid #afafaf;
+      font-size: 15px;
+      padding-left: 10px;
+      background: transparent;
+      z-index: 2;
+      transition: 0.25s;
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      transition: 0.25s;
+    }
+    a {
+      position: absolute;
+      top: 25%;
+      right: 3%;
+      text-decoration: underline;
+    }
+
+    input + span {
+      top: 3%;
+      font-size: 12px;
+      left: 3%;
+    }
+    input:focus + span {
+      top: 3%;
+      font-size: 12px;
+    }
+  }
+}

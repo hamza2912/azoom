@@ -1,0 +1,81 @@
+.order-detail-sidebar{
+    border: 1px solid #F8F9FA;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-style: 'Red Hat Display';
+    margin-bottom: 370px;
+
+    h2{
+        font-size: 16px;
+        font-weight: bold;
+        color:#404041;
+        margin-top: 30px;
+    }
+    .pro_div{
+        background: white;
+        border-radius: 8px;
+        height:87px;
+        width:100%;
+        overflow: hidden;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+
+        img{
+            height:100%;
+            display:inline;
+        }
+        .text_div{
+            height:100%;
+            width:65%;
+            position: relative;
+            display:inline;
+            padding-left: 10px;
+            box-sizing: border-box;
+
+            pre{
+                position: absolute;
+                top:10px;
+                font-size: 13px;
+                color:#404041;
+            }
+            p{
+                color:#404041;
+                position: absolute;
+                top:30px;
+                font-size: 11px;
+            }
+            small{
+                position: absolute;
+                top:50px;
+                color:#AFAFAF;
+                font-size: 13px;
+
+            }
+        }
+    }
+    h4{
+        font-size: 13px;
+        color:#404041;
+        font-weight: bold;
+        margin-top: 36px;
+    }
+    p{
+        color:#404041;
+        font-size: 13px;
+    }
+    .org{
+        margin-top: 20px;
+        color:#EE5F3B;
+        font-style: 'Red Hat Display';
+        font-size: 13px;
+        line-height: 16px;
+        text-decoration: underline;
+    }
+    .orglast{
+        margin-bottom: 200px;
+    }
+    hr{
+        margin-top:45px;
+    }
+}

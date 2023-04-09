@@ -1,0 +1,27 @@
+.rating-stars-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+    span {
+        color: #797979;
+        font-size: 14px;
+        font-weight: 500;
+        &.products-rating-avg{
+            font-size: 15px !important;
+        }
+    }
+    .recently-rated {
+        font-size: 18px;
+    }
+    .item-name {
+        font-size: 13px;
+    }
+    .total-reviews{
+        font-size: 13px;
+        font-weight: 600;
+        margin-left: 5px;
+        color: $bg_orange;
+        text-decoration: underline;
+    }
+}

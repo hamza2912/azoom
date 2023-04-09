@@ -1,0 +1,124 @@
+.order-success-wrapper {
+    .thanks-heading {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .order-no {
+        font-size: 18px;
+        font-weight: bold;
+        color: #404041;
+    }
+    .confirmation-msg {
+        font-size: 16px;
+    }
+    .link {
+        color: $bg_orange;
+        font-weight: bold;
+    }
+    .parcel-heading {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .submit-btn {
+        color: white;
+        background-color: $bg_cyan;
+        float: right;
+        width: 275px;
+    }
+    .dropdown-wrapper {
+        text-align: right;
+        .dropdown {
+            background-color: transparent;
+            border: 1px solid #404041;
+            border-radius: 4px;
+            width: 275px;
+            padding: 10px 5px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+    .product-row {
+        box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.25);
+        border-radius: 10px;
+        .product-img {
+            background-color: #fcfcfc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                padding: 15px;
+            }
+        }
+        .product-details {
+            background-color: white;
+            padding: 30px;
+            .product-name {
+                font-size: 24px;
+                margin-bottom: 2px;
+            }
+            .author {
+                font-size: 14px;
+            }
+            .quantity {
+                font-size: 14px;
+                color: #afafaf;
+            }
+            .price {
+                font-size: 22px;
+                color: $bg_cyan;
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .order-success-wrapper {
+        .submit-btn {
+            float: none;
+        }
+    }
+}
+@media (min-width: 768px){
+    .order-success-wrapper{
+        .product-resp-details{
+                display: none;
+            
+        }
+    }
+}
+@media (max-width: 768px) {
+    .order-success-wrapper {
+        .dropdown-wrapper {
+            .dropdown {
+                width: 100%;
+            }
+        }
+        .submit-btn {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .product-img{
+            padding: 40px;
+        }
+        .product-details{
+            .product-name{
+                display: none;
+            }
+            .author{
+                display: none;
+            }
+        }
+        .product-resp-details{
+            background-color: white;
+            padding: 25px;
+            .product-name {
+                font-size: 24px;
+                margin-bottom: 2px;
+            }
+            .author {
+                font-size: 14px;
+            }
+        }
+    }
+}

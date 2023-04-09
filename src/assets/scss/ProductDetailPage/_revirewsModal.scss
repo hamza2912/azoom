@@ -1,0 +1,242 @@
+.reviews-modal-wrapper {
+    width: 85%;
+    // background-color: white;
+    // margin: auto;
+    // border-radius: 9px;
+    // box-sizing: border-box;
+    // margin-top: 5%;
+    // padding: 15px 20px;
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        img {
+            width: auto;
+            height: 10px;
+            cursor: pointer;
+        }
+    }
+    .image-wrapper {
+        padding: 20px 0px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: auto;
+            height: 160px;
+        }
+    }
+    .product-info-wrapper {
+        padding: 30px;
+        .basic-product-info {
+            p {
+                font-size: 18px;
+                font-family: "Red Hat Display";
+                font-weight: bold;
+                color: #404041;
+                margin-bottom: 8px;
+            }
+            .author {
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .price {
+                color: #53acaa;
+                font-size: 24px;
+                font-family: "Red Hat Display";
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .addtobasket-btn {
+        background-color: #53acaa;
+        margin-top: 20px;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid #53acaa;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .ratings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        pre {
+            color: #797979;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        h1 {
+            font-size: 44px;
+            color: #404041;
+            font-weight: bold;
+        }
+    }
+    .progress_div {
+        width: 100%;
+        height: 33px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        pre {
+            margin-top: 15px;
+            color: #797979;
+            font-size: 12px;
+        }
+        .progress {
+            border-radius: 40px;
+            height: 22px;
+            width: 69%;
+            .progress-bar {
+                background: #53acaa;
+            }
+        }
+    }
+    .modal-reviews-wrapper {
+        margin-top: 28px;
+        .reviews-header {
+            display: flex;
+            .search-wrapper {
+                flex: 1;
+                .input-groups {
+                    height: 70px;
+                    width: 100%;
+                    font-size: 12px;
+                    position: relative;
+                    input {
+                        height: 50px;
+                        width: 100%;
+                    }
+                    .input-group-append {
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        height: 50px;
+                        background: #53acaa;
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            width: 47%;
+                            height: 46%;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 13px;
+            color: #797979;
+        }
+    }
+    .btn_div {
+        margin-left: 0px;
+        float: none;
+        .dropdown {
+            display: block;
+            width: 100%;
+            .dropdowns {
+                border: 1px solid #797979;
+                width: 100%;
+                p {
+                    top: 12%;
+                    left: 1%;
+                }
+                small {
+                    left: 1%;
+                }
+                img {
+                    right: 1%;
+                }
+            }
+        }
+    }
+    .date-wrapper {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2px;
+        img {
+            height: 12px;
+            padding-right: 3px;
+        }
+        .date {
+            font-size: 12px;
+            color: #afafaf;
+            margin-bottom: 0px;
+        }
+    }
+    .review-text {
+        color: #797979;
+        margin-top: 10px;
+        font-size: 12px !important;
+        margin-bottom: 0px !important;
+    }
+    .user_div {
+        position: relative;
+        width: 100%;
+        img {
+            width: 20px;
+            height: auto;
+        }
+        h3 {
+            position: absolute;
+            top: 10px;
+            left: 45px;
+            font-size: 12px;
+            color: #404041;
+            font-weight: bold;
+        }
+        pre {
+            position: absolute;
+            top: 22px;
+            left: 45px;
+            font-size: 13px;
+            color: #797979;
+        }
+        p {
+            color: #53acaa;
+            font-size: 12px;
+            position: absolute;
+            left: 45px;
+            top: 44px;
+            i {
+                margin-right: 7px;
+            }
+        }
+    }
+    .btn {
+        button {
+            height: 40px;
+            width: 70px;
+            margin-top: 20px;
+            color: #afafaf;
+            border: none;
+            background: transparent;
+            border: 1px solid #afafaf;
+            border-radius: 6px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-right: 6px;
+                height: 19px;
+            }
+        }
+    }
+}

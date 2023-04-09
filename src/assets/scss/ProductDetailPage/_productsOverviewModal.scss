@@ -1,0 +1,103 @@
+.products-overview-wrapper {
+    width: 85%;
+    // background-color: white;
+    // margin: auto;
+    // border-radius: 9px;
+    // box-sizing: border-box;
+    // margin-top: 5%;
+    // padding: 15px 20px;
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        img {
+            width: auto;
+            height: 10px;
+            cursor: pointer;
+        }
+    }
+    .image-wrapper {
+        padding: 20px 0px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: auto;
+            height: 160px;
+        }
+    }
+    .product-info-wrapper {
+        padding: 30px;
+        .basic-product-info {
+            p {
+                font-size: 16px;
+                font-family: "Red Hat Display";
+                font-weight: bold;
+                color: #404041;
+                margin-bottom: 8px;
+            }
+            .author {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .price {
+                color: #53acaa;
+                font-size: 22px;
+                font-family: "Red Hat Display";
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .addtobasket-btn {
+        background-color: #53acaa;
+        margin-top: 20px;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid #53acaa;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .description-wrapper{
+        margin-top: 20px;
+        .heading {
+            color: #404041;
+            font-size: 18px;
+            font-family: "Red Hat Display";
+            font-weight: bold;
+        }
+        .desc-text {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .specifications-wrapper{
+        .heading {
+            color: #404041;
+            font-size: 18px;
+            font-family: "Red Hat Display";
+            font-weight: bold;
+        }
+        tbody {
+            color: #404041;
+            font-size: 12px;
+            border: 1px solid #f0f0f0;
+            td {
+                font-size: 14px;
+                width: 50%;
+                border: 1px solid #f0f0f0;
+            }
+        }
+    }
+}

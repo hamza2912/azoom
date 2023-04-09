@@ -1,0 +1,116 @@
+.container_fav {
+    .heading-row{
+        height: 100px;
+        padding-left: 5px;
+        .heading_fav {
+            color: $heading_color;
+            font-size: $heading_size;
+            font-family: $font_style;
+            font-weight: bold;
+        }
+        .result {
+            color: #797979;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .inp_div_fav {
+            display: flex;
+            justify-content: center;
+            float: right;
+            .share_btn {
+                height: 45px;
+                width: 106px;
+                border-radius: 8px;
+                background-color: transparent;
+                border: 2px solid $bg_cyan;
+                color: $bg_cyan;
+                font-size: 15px;
+                font-weight: bold;
+                font-family: $font_style;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition-duration: .5s;
+                outline: none;
+                &:hover{
+                    background-color: $bg_cyan;
+                    color: white;
+                }
+                img{
+                    padding: 5px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .fav_card_div {
+        margin-bottom: 100px;
+        
+        .textGrey{
+            color: #797979 !important;
+        }
+        .imgGrey{
+            filter: grayscale(1);
+        }
+        .cards {
+            background-color: white;
+            padding: 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 8px 0 rgba(88, 87, 87, 0.1);
+            margin-bottom: 20px;
+            .img-div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #FCFCFC;
+                height: 280px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+
+            }
+            .content-div{
+                padding: 1rem;
+            }
+            
+            .checked {
+                color: black;
+            }
+            p {
+                font-family: $font_style;
+                font-size: 16px;
+                color: #404041;
+                font-weight: 500;
+                // line-height: 15px;
+            }
+            .name{
+                height: 43px;
+                overflow: hidden;
+            }
+            .price {
+                color: $bg_cyan;
+                font-size: 20px;
+                font-family: $font_style;
+                font-weight: bold;
+                line-height: 22px;
+            }
+            .unchecked {
+                color: transparent;
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+            }
+            pre {
+                font-family: $font_style;
+                font-size: 12px;
+                font-weight: bold;
+                color: $bg_cyan;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

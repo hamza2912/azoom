@@ -1,0 +1,114 @@
+.cancelleditems-modal-wrapper{
+    width: 85%;
+    // background-color: white;
+    // margin: auto;
+    // border-radius: 9px;
+    // box-sizing: border-box;
+    // margin-top: 5%;
+    // padding: 15px 20px;
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        img {
+            width: auto;
+            height: 10px;
+            cursor: pointer;
+        }
+    }
+    .shipment-details-wrapper{
+        .item-wrapper{
+            margin-top: 10px;
+            p{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .item-div{
+                display: flex;
+                height: 100px;
+                width: auto;
+                border-radius: 20px;
+                box-shadow: 0px 2px 2px 4px rgba(0, 0, 0, 0.05);
+                .img-div{
+                    display: flex;
+                    padding: 5px 15px 0px 15px;
+                    img{
+                        height: 85px;
+                    }
+                }
+                .item-info{
+                    .item-name{
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin: 15px 0px 4px 0px;
+                    }
+                    .provider{
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                    .quantity{
+                        color: #AFAFAF;
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .shipment-wrapper{
+            margin-top: 15px;
+            p{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            span{
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .status{
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .deivery-links{
+                display: grid;
+                a{
+                    font-size: 15px;
+                    color: $bg_orange;
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+            }
+            .delivery-address-div{
+                p{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .order-details{
+            margin-top: 15px;
+            p{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            span{
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .order-no{
+                font-size: 15px;
+                font-weight: 500;
+            }
+            a{
+                font-size: 15px;
+                color: $bg_orange;
+                text-decoration: underline;
+                font-weight: 500;
+            }
+        }
+    }
+}

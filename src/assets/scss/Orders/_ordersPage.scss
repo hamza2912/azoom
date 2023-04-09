@@ -1,0 +1,379 @@
+@import "./cancelledItemsModal";
+
+:root {
+	--font_style: "Red Hat Display";
+
+	--heading_size: 30px;
+	--heading_color: #404041;
+
+	--bg_color_cyan: #53acaa;
+	--bg_color_orange: #ee5f3b;
+}
+.main-container {
+	.flex-content {
+		display: flex;
+		justify-content: space-between;
+		.right-border {
+			display: flex;
+			align-items: center;
+			height: 20px;
+			border-right: 1px solid #dddddd;
+			p {
+				margin-bottom: 0px;
+				font-weight: 500;
+				font-size: 13px;
+			}
+		}
+		.t-price {
+			p{
+				font-weight: 500;
+				font-size: 13px;
+			}
+		}
+	}
+	.flex {
+		display: flex;
+	}
+	.flex-center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.main-heading-div {
+		height: 50px;
+		.heading {
+			font-size: $heading_size;
+			color: $heading_color;
+		}
+		.btn-search {
+			background-color: $bg_cyan;
+			height: 45px;
+			width: 40px;
+			font-size: 18px;
+			border-radius: 0px 5px 5px 0px;
+		}
+		.input-group {
+			input {
+				background-color: transparent;
+				border: 2px solid #afafaf;
+				height: 45px;
+			}
+		}
+	}
+	.tabs-div {
+		list-style: none;
+		font-size: 16px;
+		font-weight: bold;
+		color: $heading_color;
+		width: 100%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		padding: 0px;
+		border-bottom: 3px solid lightgrey !important;
+		li {
+			text-align: center;
+			transition-duration: 0.2s;
+			width: 20%;
+			padding-bottom: 15px;
+			margin-bottom: -3px;
+		}
+		.active {
+			color: $bg_orange;
+			border-bottom: 3px solid $bg_orange;
+		}
+		li:hover {
+			cursor: pointer;
+			color: $bg_orange;
+			border-bottom: 3px solid $bg_orange;
+		}
+	}
+	.card_div {
+		background-color: transparent;
+		.top_row {
+			font-size: 13px;
+			.view_invoice {
+				color: $bg_orange;
+				text-decoration: underline;
+				margin-left: 15px;
+			}
+			.text_right {
+				text-align: right;
+			}
+		}
+		.card_img_div {
+			text-align: center;
+			.bg-white {
+				background-color: #fcfcfc;
+			}
+			img {
+				height: 100%;
+				width: auto;
+			}
+		}
+		.card_body {
+			padding: 40px 20px;
+			h5 {
+				span {
+					font-size: 15px;
+					color: $heading_color;
+				}
+			}
+			.card-text {
+				margin-bottom: 2px;
+				font-weight: bold;
+				color: #afafaf;
+				b{
+					color: #404041;
+					font-size: 14px;
+					font-weight: 600;
+				}
+			}
+			.card_title {
+				color: $bg_cyan;
+				margin-bottom: 0px;
+				span {
+					margin-left: 10px;
+				}
+			}
+			.card_title_cancel {
+				color: $bg_orange;
+			}
+			.text-muted {
+				line-height: 2px;
+			}
+		}
+		.col-md-3 {
+			button {
+				width: 80%;
+				height: 35px;
+				background-color: transparent;
+				font-size: 13px;
+				transition-duration: 0.5s;
+			}
+			
+			.b1 {
+				border: 2px solid #404041;
+				color: #404041;
+			}
+			.b1:hover {
+				background-color: #404041;
+				border: 2px solid white;
+				color: white;
+			}
+			.b2 {
+				color: $bg_cyan;
+				border: 2px solid $bg_cyan;
+			}
+			.b2:hover {
+				background-color: $bg_cyan;
+				border: 2px solid white;
+				color: white;
+			}
+			.b3 {
+				color: #b6b39f;
+				border: 2px solid #b6b39f;
+			}
+			.b3:hover {
+				background-color: #b6b39f;
+				border: 2px solid white;
+				color: white;
+			}
+			.b4 {
+				color: white;
+				background: $bg_orange;
+				border: 2px solid $bg_orange;
+			}
+			.b4:hover {
+				color: $bg_orange;
+				background-color: white;
+			}
+		}
+	}
+	.progress-items-wrapper {
+		text-align: center;
+		.view-btn {
+			width: 18%;
+			height: 45px;
+			background-color: transparent;
+			font-size: 13px;
+			transition-duration: 0.5s;
+			color: $bg_cyan;
+			border: 2px solid $bg_cyan;
+		}
+		.view-btn:hover {
+			background-color: $bg_cyan;
+			border: 2px solid white;
+			color: white;
+		}
+	}
+	.returned-items-wrapeer {
+		.return-eligible-div {
+			height: 50px;
+			border: 2px solid #afafaf;
+			display: flex;
+			align-items: center;
+			padding-top: 8px;
+			font-size: 16px;
+			.link {
+				color: #ee5f3b;
+				text-decoration: underline;
+			}
+			.info-div {
+				background-color: #afafaf;
+				height: 48px;
+				width: 50px;
+				margin-top: -6px;
+				img {
+					padding: 12px;
+				}
+			}
+		}
+		.view-btn {
+			width: 18%;
+			height: 45px;
+			background-color: transparent;
+			font-size: 13px;
+			transition-duration: 0.5s;
+			color: $bg_cyan;
+			border: 2px solid $bg_cyan;
+		}
+		.view-btn:hover {
+			background-color: $bg_cyan;
+			border: 2px solid white;
+			color: white;
+		}
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 520px) {
+	.heading_div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h1 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+	}
+	.tabs-div {
+		opacity: 0;
+	}
+	.top_row {
+		p {
+			text-align: center;
+		}
+
+		.text_right {
+			text-align: center;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.main-container {
+		.main-heading-div {
+			.filters-btn {
+				display: none;
+			}
+		}
+		.block {
+			display: none;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.main-container {
+		.tabs-div {
+			font-size: 15px;
+		}
+		.card_div {
+			.col-md-3 {
+				button {
+					height: 42px;
+					font-size: 11px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.main-container {
+		.main-heading-div {
+			height: 60px;
+			.heading-flex {
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid #afafaf;
+			}
+			.search-input {
+				margin-top: 12px;
+				background-color: transparent;
+			}
+			.filters-btn {
+				color: $bg_cyan;
+				background-color: transparent;
+				border: 2px solid $bg_cyan;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				img {
+					padding: 5px;
+					padding-right: 8px;
+					height: 25px;
+				}
+			}
+		}
+		.flex-content {
+			display: block;
+			.order-date {
+				display: block;
+				text-align: center;
+			}
+			.t-price {
+				display: none;
+			}
+		}
+		.block {
+			display: block;
+			text-align: center;
+			background-color: white;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			.view_invoice {
+				color: $bg_orange;
+				text-decoration: underline;
+			}
+		}
+		.tabs-div {
+			display: none;
+		}
+		.card_div {
+			.card_img_div {
+				img {
+					height: 75%;
+					margin-bottom: 30px;
+				}
+			}
+			.buttons {
+				display: none;
+			}
+			.resp-btn {
+				.flex-btn {
+					padding: 1.25rem;
+					padding-bottom: 0px;
+					padding-top: 10px;
+					justify-content: space-between;
+					display: flex;
+					.b1 {
+						width: 48%;
+					}
+					.b3 {
+						width: 48%;
+					}
+					.b2 {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

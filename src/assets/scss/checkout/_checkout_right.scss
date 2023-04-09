@@ -1,0 +1,125 @@
+.summary-wrapper {
+  border: 1px solid transparent;
+  background: white;
+  margin-top: 60px;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1;
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  pre {
+    font-size: 14px;
+    color: #ee5f3b;
+    text-decoration: underline;
+    font-weight: bold;
+    float: right;
+    font-family: "Red Hat Display";
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .item_count {
+    font-size: 15px;
+    font-weight: 500;
+    color: #404041;
+    margin-top: 0;
+  }
+  .itemss {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    margin-top: 10px;
+    img {
+      width: 40px;
+      position: absolute;
+      left: 0px;
+    }
+    .name {
+      position: absolute;
+      left: 66px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 7px;
+      font-size: 0.9rem;
+      font-size: 0.9rem;
+      width: 60%;
+      font-weight: 500;
+      color: #404041;
+      p {
+        font-size: 12px;
+      }
+      .quite {
+        width: 65%;
+      }
+      small {
+        color: #cccccc;
+        font-size: 12px;
+      }
+    }
+    .price {
+      font-weight: bold;
+      font-size: 14px;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+      color: #404041;
+      top: 2%;
+    }
+  }
+  hr {
+    width: 95%;
+    text-align: center;
+    margin-left: 2%;
+  }
+  .price_div {
+    margin: auto;
+    position: relative;
+    .amout_for {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .amount {
+      font-weight: bold;
+      font-size: 14px;
+      position: absolute;
+      right: 0px;
+      color: #404041;
+    }
+  }
+  .total_price {
+    color: #404041;
+    margin: auto;
+    .amout_for {
+      font-size: 19px;
+      font-weight: bold;
+    }
+    .amount {
+      font-weight: bold;
+      font-size: 20px;
+      float: right;
+    }
+  }
+  .place_order_btn {
+    border-radius: 8px;
+    background-color: #68aaa9;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    height: 45px;
+    width: 100%;
+  }
+  .last_para {
+    font-size: 12px;
+    margin-top: 16px;
+    span {
+      color: #ee5f3b;
+      font-weight: bold;
+    }
+  }
+}

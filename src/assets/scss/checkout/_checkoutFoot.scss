@@ -1,0 +1,23 @@
+.footer_div{
+    font-family: 'Red Hat Display';
+    margin-top: 20px;
+    .row{
+         display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    h5{
+        width:100%;
+        font-size: 13px;
+        text-align: center;
+        margin-left: -7%;
+    }
+    .footer_link{
+        font-size:14px;
+        color:#53ACAA;
+        font-weight: bold;
+        margin-left: 3%;
+        text-align: left;
+        margin-right: 4%;
+    }
+}

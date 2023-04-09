@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.294" height="30.852" viewBox="0 0 31.294 30.852">
+  <g id="icon_book-shelfs" transform="translate(0.75 0.75)">
+    <g id="Group_3009" data-name="Group 3009">
+      <line id="Line_381" data-name="Line 381" x1="29.794" transform="translate(0 26.248)" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Rectangle_3863" data-name="Rectangle 3863" d="M2,0H4.082a2,2,0,0,1,2,2V26.248a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" transform="translate(9.182)" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Rectangle_3864" data-name="Rectangle 3864" d="M2,0H3.6a2,2,0,0,1,2,2V21.265a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" transform="translate(3.578 4.982)" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_382" data-name="Line 382" x2="5.602" transform="translate(3.578 9.844)" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="Group_2537" data-name="Group 2537" transform="translate(-938.049 -4258.526)">
+        <path id="Path_7373" data-name="Path 7373" d="M962.476,4280.482l.559,3.174L957,4284.719l-3.658-20.746a2.187,2.187,0,0,1,1.774-2.533l1.725-.3a2.185,2.185,0,0,1,2.533,1.774l2.406,13.642" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_383" data-name="Line 383" y1="1.064" x2="6.032" transform="translate(953.888 4265.99)" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_384" data-name="Line 384" y1="1.064" x2="6.032" transform="translate(956.443 4280.482)" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <line id="Line_385" data-name="Line 385" y2="3.104" transform="translate(2.701 26.248)" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_386" data-name="Line 386" y2="3.104" transform="translate(27.105 26.248)" fill="none" stroke="#404041" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

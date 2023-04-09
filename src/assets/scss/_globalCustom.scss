@@ -1,0 +1,51 @@
+@mixin common-btn {
+	background-color: transparent;
+	font-size: 13px;
+	transition-duration: 0.5s;
+	outline: none !important;
+}
+.primary_btn {
+	@include common-btn();
+	background-color: transparent;
+    border: 2px solid #ee5f3b !important;
+    color: #ee5f3b;
+	width: 133px;
+	height: 40px;
+	font-weight: bold;
+	border-radius: 6px;
+	outline: #ee5f3b ;
+	&:hover {
+		background-color: #ee5f3b;
+		color: white;
+	}
+}
+.secondary_btn {
+	@include common-btn();
+	color: $bg_cyan;
+	border: 2px solid $bg_cyan !important;
+	width: 133px;
+	height: 40px;
+	font-weight: bold;
+	border-radius: 6px;
+	margin-top: -8px;
+	&:hover {
+		background-color: $bg_cyan;
+		color: white;
+	}
+}
+.ternary_btn {
+	@include common-btn();
+	color: white;
+	border: 1px solid white;
+	font-weight: bold;
+	height: 40px;
+	width: 85px;
+	padding: 5px;
+	border-radius: 6px;
+	margin-top: -1px;
+	&:hover {
+		background-color: white;
+		border: 2px solid white;
+		color: #404041;
+	}
+}

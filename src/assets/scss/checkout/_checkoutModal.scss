@@ -1,0 +1,47 @@
+.thanks_popup {
+  width: 28%;
+  background-color: white;
+  margin: auto;
+  border-radius: 9px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
+  h1 {
+    font-size: 23px;
+    font-family: "Red Hat Display";
+    color: #404041;
+    text-align: center;
+    font-weight: bold;
+  }
+  img {
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #404041;
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.card-form {
+  width: 100%;
+
+  .pay-btn {
+    background-color: #53acaa;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+}
+@media screen and(min-width:300px) and(max-width:500px) {
+  .thanks_popup {
+    width: 97%;
+  }
+}
